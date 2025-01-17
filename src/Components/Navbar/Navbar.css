@@ -1,0 +1,40 @@
+
+.MuiToolbar-root {
+  background: white;
+  backdrop-filter: blur(2px);
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+}
+
+
+.nav2 {
+  display: flex;
+  transition: transform 0.3s ease, gap 0.3s ease;
+  gap: 8vw;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.MuiTypography-subtitle1:hover {
+  cursor: pointer;
+  color:coral;
+  text-decoration:underline
+}
+
+.drawer {
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+
+/* 
+xs, extra-small: 0px
+sm, small: 600px
+md, medium: 900px
+/* lg, large: 1200px */
+/* xl, extra-large: 1536px */

@@ -1,0 +1,72 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap:15vh;
+  padding-bottom: 10vh;
+  
+  @media screen and (max-width: 900px) {
+    margin-top: 50vh;
+  }
+}
+
+.project-container .MuiTypography-h4{
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+.project-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+  
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:5vh
+  }
+
+}
+
+
+/* .card-1 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  width: 398px;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+} */
+/* 
+.card-1 .MuiTypography-h6 {
+  font-weight: bold;
+} */
+
+/* .projects-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    gap: 2vh;
+  }
+} */
+
+/* 
+.card-1 img{
+  width: 100%;
+
+} */

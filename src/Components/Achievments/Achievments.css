@@ -1,0 +1,75 @@
+.achievments-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.tech-stack{
+    background-color:linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0.1) 100%
+    );
+    backdrop-filter: blur(20px);
+    width: 500px;
+    height: 600px;
+    overflow: auto;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex-wrap:wrap-reverse; */
+    gap: 5vh
+}
+
+.tech-stack .MuiTypography-h5{
+    padding-bottom: 4vh;
+    /* text-decoration: underline; */
+    font-weight:bolder;
+    color: #37474f;
+}
+
+.tech-stack .MuiTypography-h4{
+    text-align: center;
+    font-weight:bolder;
+    color: #37474f;
+}
+
+
+.tech-stack .MuiChip-colorPrimary {
+    font-size:large;
+    padding: 1vh;
+    margin-bottom: 5vh;
+    margin-right: 1vh;
+}
+
+.tech-stack .MuiChip-colorError{
+    font-size:medium;
+    padding: 1vh;
+    margin-bottom: 2vh;
+    margin-right: 1vh;
+    background-color: #536dfe;
+}
+
+
+.frontend .MuiIconButton-root{
+    color: #37474f;
+    /* font-size: larger; */
+}
+
+.Backend .MuiIconButton-root{
+    color: #37474f;
+}
+
+.other .MuiIconButton-root{
+    color: #37474f;
+}
+
+.tech-stack .MuiDivider-root{
+    background-color: #78909c;
+    border-width: 1.5px
+}
+
+
