@@ -1,12 +1,12 @@
 
+
 .MuiToolbar-root {
   background: white;
   backdrop-filter: blur(2px);
   color: black;
   display: flex;
   justify-content: space-around;
-  position: sticky;
-  top: 0;
+
 }
 
 
@@ -18,6 +18,11 @@
   @media screen and (max-width: 900px) {
     display: none;
   }
+}
+
+.nav-container .MuiTypography-h5:hover{
+  cursor: pointer;
+  color:green
 }
 
 .MuiTypography-subtitle1:hover {

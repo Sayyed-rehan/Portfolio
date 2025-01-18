@@ -24,19 +24,21 @@ const Navbar = () => {
     setAnchorEl(null);
   };
 
-  console.log(anchorEl,"anchorEl");
+
 
   return (
     <Box className="nav-container">
-      <AppBar  position='static'>
+      <AppBar position='fixed'>
         <Toolbar className="toolbar">
           <Typography variant="h5" fontWeight="bold">
+          <Link to='nav-container' smooth={true} duration={400}>
             Sayyed Rehan
+          </Link>
           </Typography>
 
-          <box className="nav2">
+          <Box className="nav2">
             <Typography variant="subtitle1">
-            <Link to='home' smooth={true} duration={400}>
+            <Link to='home-container' smooth={true} duration={400}>
             Home
             </Link>
             </Typography>
@@ -51,17 +53,25 @@ const Navbar = () => {
             Achievments
             </Link>
             </Typography>
-            <Typography variant="subtitle1">Contact</Typography>
-          </box>
+            <Typography variant="subtitle1">
+            <Link to='contact-container' smooth={true} duration={600}>
+            Contact
+            </Link>
+            </Typography>
+          </Box>
 
          
 
-          <box className="drawer">
+          <Box className="drawer">
             <IconButton size="large" edge="start" onClick={handleClick}>
               <MenuIcon />
             </IconButton>
             <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
-              <MenuItem onClick={handleClose}>Home</MenuItem>
+            <MenuItem >
+              <Link to='home-container' smooth={true} duration={400} onClick={handleClose}>
+              Home
+              </Link>
+              </MenuItem>
               <MenuItem >
               <Link to='projects' smooth={true} duration={400} onClick={handleClose}>
               Projects
@@ -72,9 +82,13 @@ const Navbar = () => {
               Achievments
               </Link>
               </MenuItem>
-              <MenuItem>Contact</MenuItem>
+              <MenuItem>
+              <Link to='contact-container' smooth={true} duration={600}  onClick={handleClose}>
+              Contact
+              </Link>
+              </MenuItem>
             </Menu>
-          </box>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>

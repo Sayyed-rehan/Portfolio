@@ -3,11 +3,17 @@
   justify-content: center;
   align-items: center;
   gap: 2vw;
-  height: 80vh;
-  margin-bottom: 10vh;
+  height: 100vh;
+  /* margin-bottom: 10vh; */
 
   @media screen and (max-width: 900px) {
+    height: 100vh;
+    display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    margin-bottom: 1vh;
   }
 }
 
@@ -16,8 +22,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
- 
+.content .MuiTypography-root{
+  text-align: center;
 }
 
 .content .MuiTypography-h3 {
@@ -26,4 +34,5 @@
 
 .content .MuiTypography-h5 {
   color: rgba(165, 154, 154, 1);
+  padding:2vh 0;
 }
