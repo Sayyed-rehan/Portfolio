@@ -3,6 +3,7 @@ import "./Home.css";
 import { Box, Button, Typography } from '@mui/material'
 import profile from "./../../Images/profile_img.png"
 import resume from "../../Pdfs/Rehan_Sayyed_Resume.pdf"
+import CloudDownloadOutlinedIcon from '@mui/icons-material/CloudDownloadOutlined';
 
 // import {} from ""
 const Home = () => {
@@ -18,7 +19,9 @@ const Home = () => {
         </Typography>
      </Typography>
       <Button
-      href={resume} download='Sayyed Rehan' variant='contained'>
+      href={resume} download='Sayyed Rehan' variant='contained'
+      startIcon={<CloudDownloadOutlinedIcon  fontSize="large"/>}
+      >
       Resume
       </Button>
 
