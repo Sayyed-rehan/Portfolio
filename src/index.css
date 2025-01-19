@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: url("./Images/background.jpg"); /* Replace with your image URL */
+  background-image: url("./Images/background3.jpg"); /* Replace with your image URL */
   background-repeat: repeat;
   background-size: cover; /* Ensures the image covers the entire background */
   background-attachment: fixed; /* Keeps the background fixed while scrolling */

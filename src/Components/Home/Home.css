@@ -7,14 +7,23 @@
   /* margin-bottom: 10vh; */
 
   @media screen and (max-width: 900px) {
+    margin-top: 10vh;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-
     margin-bottom: 1vh;
   }
+}
+
+.home-container img {
+  background-color: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  backdrop-filter: blur(60px);
 }
 
 .content {
@@ -24,7 +33,7 @@
   align-items: center;
 }
 
-.content .MuiTypography-root{
+.content .MuiTypography-root {
   text-align: center;
 }
 
@@ -34,5 +43,5 @@
 
 .content .MuiTypography-h5 {
   color: rgba(165, 154, 154, 1);
-  padding:2vh 0;
+  padding: 2vh 0;
 }
