@@ -51,7 +51,7 @@ const Navbar = () => {
             </Typography>
             <Typography variant="subtitle1">
               <Link to="achievments-container" smooth={true} duration={600}>
-                Achievments
+                Achievements
               </Link>
             </Typography>
             <Typography variant="subtitle1">
