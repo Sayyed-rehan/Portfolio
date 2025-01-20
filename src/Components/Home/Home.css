@@ -7,13 +7,14 @@
   /* margin-bottom: 10vh; */
 
   @media screen and (max-width: 900px) {
-    margin-top: 10vh;
+   
+    padding-top: 10vh;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1vh;
+    /* margin-bottom: 1vh; */
   }
 }
 

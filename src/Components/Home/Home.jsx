@@ -13,7 +13,7 @@ const Home = () => {
       <Box className="content">
      <Typography variant='h6'>Hello I'm
       <br/>
-        <Typography variant="h3" >Sayyed Rehan
+        <Typography variant="h3" >Rehan Sayyed
           <br/>
           <Typography variant='h5' >Full Stack Developer</Typography>
         </Typography>

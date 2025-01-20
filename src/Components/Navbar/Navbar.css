@@ -6,13 +6,11 @@
   color: black;
   display: flex;
   justify-content: space-around;
-
 }
 
 
 .nav2 {
   display: flex;
-  transition: transform 0.3s ease, gap 0.3s ease;
   gap: 8vw;
 
   @media screen and (max-width: 900px) {
@@ -22,12 +20,12 @@
 
 .nav-container .MuiTypography-h5:hover{
   cursor: pointer;
-  color:green
+  color:#4db6ac
 }
 
 .MuiTypography-subtitle1:hover {
   cursor: pointer;
-  color:coral;
+  color:#304ffe;
   text-decoration:underline
 }
 

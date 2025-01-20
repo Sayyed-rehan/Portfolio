@@ -84,21 +84,21 @@ const Achievments = () => {
 
   return (
     <Box className="achievments-container" id="Achievments">
-      <ImageList gap={10} sx={{boxShadow:"12"}}>
-        <ImageListItem key="Subheader" cols={2} >
-          <ListSubheader component="div">Certificates</ListSubheader>
+      <ImageList gap={10} sx={{boxShadow:"12"}} >
+
+        <ImageListItem key="Subheader" cols={2}>
+          <ListSubheader component='div'>Certificates</ListSubheader>
         </ImageListItem>
+      
         {Certificates_details.map((item) => (
-          <ImageListItem key={item.img}>
+          <ImageListItem key={item.img} component='div' >
             <img
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
               src={`${item.img}?w=248&fit=crop&auto=format`}
               alt={item.title}
 
             />
-            <ImageListItemBar
-              title={item.title}
-              subtitle={item.author}
+            <ImageListItemBar title={item.title} subtitle={item.author} 
               actionIcon={
                 <IconButton
                   sx={{ color: "rgba(255, 255, 255, 0.54)" }}
@@ -113,8 +113,9 @@ const Achievments = () => {
           </ImageListItem>
         ))}
       </ImageList>
+
       <Box className="tech-stack" boxShadow={12}>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" gutterBottom >
           Technology
         </Typography>
         <Box className="frontend">
