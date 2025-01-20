@@ -20,7 +20,7 @@ const Home = () => {
      </Typography>
       <Button
       href={resume} download='Sayyed Rehan' variant='contained'
-      startIcon={<CloudDownloadOutlinedIcon  fontSize="large"/>}
+      endIcon={<CloudDownloadOutlinedIcon  fontSize="large"/>}
       >
       Resume
       </Button>
