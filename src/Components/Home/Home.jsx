@@ -5,11 +5,11 @@ import profile from "./../../Images/profile_img.png"
 import resume from "../../Pdfs/Rehan_Sayyed_Resume.pdf"
 import CloudDownloadOutlinedIcon from '@mui/icons-material/CloudDownloadOutlined';
 
-// import {} from ""
+
 const Home = () => {
   return (
     <Box className="home-container">
-      <img src={profile} alt="profile img"  />
+      <img src={profile} alt="profile img" />
       <Box className="content">
      <Typography variant='h6'>Hello I'm
       <br/>
