@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import { Box, Stack, Typography, Chip, Divider } from "@mui/material";
+import { Box, Stack, Typography, Chip, Divider, Tooltip } from "@mui/material";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -12,11 +12,14 @@ const Contact = () => {
       <Typography variant='subtitle-1' >Get In Touch</Typography>
       <Typography variant='h3'>Contact Me</Typography>
       <Box className="contact-links" boxShadow={12}>
-        <Chip 
-        icon={<MailOutlineIcon color="action"/>} 
-        label="rehansayyed1216@gmail.com" 
-        component="a"
-        />
+        <Tooltip title='Copy to Clipboard'>
+          <Chip 
+          icon={<MailOutlineIcon color="action"/>} 
+          label="rehansayyed1216@gmail.com" 
+          component="a"
+          onClick={() => {navigator.clipboard.writeText('rehansayyed1216@gmail.com')}}
+          />
+        </Tooltip>
         <Divider orientation='vertical'/>
       <Box className="email">
         <Chip 
@@ -24,7 +27,9 @@ const Contact = () => {
         component="a"
         href='https://www.linkedin.com/in/rehan-sayyed-0682b220a/' 
         target="_blank"
-        icon={<LinkedInIcon color='primary'/>}/>
+        icon={<LinkedInIcon color='primary'/>}
+          
+        />
 
 
         <Chip label="Github" 
@@ -38,7 +43,9 @@ const Contact = () => {
         component="a"
         href='https://leetcode.com/u/sayyed_rehan/' 
         target="_blank"
-        icon={<TerminalIcon color="warning"/>}/>
+        icon={<TerminalIcon color="warning"/>}
+        
+        />
      </Box>
       </Box>
     </Box>
