@@ -5,6 +5,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TerminalIcon from '@mui/icons-material/Terminal';
+import gmail from "../../Images/gmail.png"
 
 const Contact = () => {
   return (
@@ -14,7 +15,10 @@ const Contact = () => {
       <Box className="contact-links" boxShadow={12}>
         <Tooltip title='Copy to Clipboard'>
           <Chip 
-          icon={<MailOutlineIcon color="action"/>} 
+          icon={
+        <img src={gmail} alt="gmail"  height='30px' style={{'margin-right':'1px'}}/>
+          // <MailOutlineIcon color="action"/>
+          } 
           label="rehansayyed1216@gmail.com" 
           component="a"
           onClick={() => {navigator.clipboard.writeText('rehansayyed1216@gmail.com')}}
@@ -43,7 +47,9 @@ const Contact = () => {
         component="a"
         href='https://leetcode.com/u/sayyed_rehan/' 
         target="_blank"
+ 
         icon={<TerminalIcon color="warning"/>}
+
         
         />
      </Box>
