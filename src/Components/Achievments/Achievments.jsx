@@ -22,7 +22,7 @@ import InfoIcon from "@mui/icons-material/Info";
 
 const Achievments = () => {
   const Frontend = ["React JS", "HTML", "CSS", "JavaScript","TypeScript" ,"Material UI"];
-  const Backend = ["Node JS", "Express JS", "Nest JS", "SQL", "MongoDB"];
+  const Backend = ["Node JS", "Express JS", "Nest JS", "MySQL", "MongoDB"];
   const other = ["DSA", "Figma", "Github", "Postman"];
 
   const Certificates_details = [
