@@ -21,7 +21,7 @@ import cutshort from "../../Certificates/cutshort.jpg";
 import InfoIcon from "@mui/icons-material/Info";
 
 const Achievments = () => {
-  const Frontend = ["React JS", "HTML", "CSS", "JavaScript","TypeScript" ,"Material UI"];
+  const Frontend = ["React JS", "HTML", "CSS", "JavaScript","TypeScript" ,"Material UI", 'Tailwind CSS'];
   const Backend = ["Node JS", "Express JS", "Nest JS", "MySQL", "MongoDB"];
   const other = ["DSA", "Figma", "Github", "Postman"];
 
