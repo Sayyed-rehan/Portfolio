@@ -1,6 +1,6 @@
 .project-container {
   padding-top: 15vh;
-  height: 100vh;
+  height: max-content;
 
   display: flex;
   flex-direction: column;
@@ -30,6 +30,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5vh;
+
 
 
   @media screen and (max-width: 1250px) {

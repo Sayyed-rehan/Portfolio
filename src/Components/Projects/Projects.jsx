@@ -4,6 +4,8 @@ import { Box, Button, Typography } from "@mui/material";
 import e_commerce from "../../Images/e-commerce.png";
 import social_media from "../../Images/social-media1.png";
 import restraunt from "../../Images/restraunt.png";
+import imdb from "../../Images/imdb.png";
+
 import Cards from "../Cards/Cards";
 
 const Projects = () => {
@@ -32,6 +34,14 @@ const Projects = () => {
           title="Restraunt Application"
           live="https://mugal-darbar.onrender.com/"
           github="https://github.com/Sayyed-rehan/Mugal-Darbar"
+        />
+
+        <Cards
+          src={imdb}
+          alt="IMDb"
+          title="IMDb Application"
+          live="https://imdb-96kj.onrender.com/"
+          github="https://github.com/Sayyed-rehan/IMDB-clone"
         />
       </Box>
     </Box>
